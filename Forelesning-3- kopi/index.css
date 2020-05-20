@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10vh 90vh;
+    padding: .6rem;
+    gap: .6rem;
+}
+
+input{
+    padding:.6rem;
+}
+
+#characters{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: .6rem;
+    text-align: center;
+    
+}
+
+article{
+    background-color: lavenderblush;
+    padding: .6rem;
+    min-height: 300px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 8px 1px lightgrey;
+    color: #333;
+    background-size: cover;
+}
+
