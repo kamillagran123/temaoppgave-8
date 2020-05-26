@@ -14,7 +14,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoia2FtaWxsYWdyYW4iLCJhIjoiY2s4anVmdG53MDhjNTNkb
 const map = new mapboxgl.Map({
 container: 'kart',
 style: 'mapbox://styles/mapbox/dark-v10',
-zoom: 11,
+zoom: 10,
 center:[10.741439, 59.902358]
 });
 
@@ -139,3 +139,17 @@ const addMarkers = () => {
 map.on("load", addMarkers)
 
 
+map.addControl(
+    new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl
+    })
+    );
+
+const btnDayMode = document.querySelector("#btnDayMode")
+
+const changeMode = () => {
+    map.setStyle("mapbox://styles/mapbox/navigation-guidance-day-v4")
+}
+
+btnDayMode.onclick = changeMode
