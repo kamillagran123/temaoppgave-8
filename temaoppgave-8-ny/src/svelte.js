@@ -153,3 +153,4 @@ const changeMode = () => {
 }
 
 btnDayMode.onclick = changeMode
+
