@@ -48,7 +48,7 @@ input[type="range"] {
 }
 
 button {
-	color: #333;
+	color: rgb(155, 142, 142);
 	background-color: #f4f4f4;
 	outline: none;
 }
@@ -75,27 +75,4 @@ body{
     
 }
 
-
-#kart {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    
-}
-
-
-.elbilmark {
-	width: 30px;
-	height: 30px;
-	
-	background-image: url('https://cdn1.vectorstock.com/i/1000x1000/35/45/electric-car-charging-station-long-shadow-symbol-vector-23773545.jpg');
-	background-size: contain;
-}
-
-#btnDayMode {
-	position: absolute;
-	left: 20px;
-	top: 20px;
-}
 
